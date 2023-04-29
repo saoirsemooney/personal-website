@@ -1,0 +1,28 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "my first attempt at a website, aimed to give anyone an intro about myself!",
+  "main": "app.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saoirsemooney/personal-website.git"
+  },
+  "author": "Saoirse Mooney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saoirsemooney/personal-website/issues"
+  },
+  "homepage": "https://github.com/saoirsemooney/personal-website#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "nodemailer": "^6.9.1"
+  }
+}

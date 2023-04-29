@@ -1,0 +1,38 @@
+<h1>Books</h1>
+<p>Reading has always been a treasure passtime for me. Here is a list of some of my favorite books. You can recommend me a book too!</p>
+<h2>Books I like</h2>
+<ul>
+    <li>The Catcher in the Rye by J.D. Salinger</li>
+    <li>Contact by Carl Sagan</li>
+    <li>The Long Goodbye by Raymond Chandler</li>
+    <li>Rebecca by Daphne du Maurier</li>
+    <li>Wuthering Heights by Emily Bronte</li>
+    <li>Stories of Your Life and Others Ted Chiang</li>
+    <li>The Things They Carried by Tim O'Brien</li>
+    <li>East of Eden by John Stienbeck</li>
+    <li>Siddartha by Herman Hesse</li>
+</ul>
+<h2>Recommend me a book</h2>
+{{#if success}}
+  <p>Thank you for your message! We will get back to you as soon as possible.</p>
+{{else}}
+  <p>There was an error submitting your message:{{error}} Please try again.</p>
+{{/if}}
+  <form action="/sendbook" method="post">
+    <label for="name">Your name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="title">Title:</label>
+    <textarea id="title" name="title" required></textarea>
+    <br>
+    <label for="author">Author:</label>
+    <textarea id="author" name="author" required></textarea>
+    <br>    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    <br>    
+    <button type="submit">Send</button>
+  </form>
